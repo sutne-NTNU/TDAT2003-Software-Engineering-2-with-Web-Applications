@@ -1,0 +1,18 @@
+# Folders
+*.idea/
+*node_modules/
+*out/
+*META_INF/
+*flow-typed/
+*bin/
+*coverage/
+
+# Filetypes
+*.iml
+*.zip
+*.class
+
+# Specific files
+*LICENSE
+*package-lock.json
+*.DS_Store

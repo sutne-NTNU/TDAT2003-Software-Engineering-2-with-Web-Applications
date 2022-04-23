@@ -1,0 +1,40 @@
+body{
+    background: rgba(36, 32, 32, 0.88);
+}
+
+#innhold{
+    display: grid;
+    grid-template-areas: 'text button';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-30%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#Brukernavn{
+    grid-area: text;
+    width: 360px;
+    height: 20px;
+}
+#Passord{
+    width: 360px;
+    height: 20px;
+}
+
+#Button{
+    grid-area: button;
+    margin-left: 3px;
+    width: 30px;
+    height: 25px;
+}
+#Button hover{
+    color: red;
+}
+
+#Setning{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 64px;
+    font-family: "Brush Script MT";
+}

@@ -1,0 +1,497 @@
+/*
+General
+ */
+#root
+{
+	background-color : #3A393E;
+	min-height       : 885px;
+	padding-bottom   : 95px;
+	text-align       : center;
+}
+html
+{
+	font-size : 100%;
+}
+.row
+{
+	margin : 0;
+}
+.feedback
+{
+	font-size     : 28px;
+	color         : #F7635F;
+	/*background-color : rgba(54, 54, 54, 0.4);*/
+	border-radius : 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Navbar */
+.custom_navbar
+{
+	outline    : solid #CD783A 2px;
+	text-align : left;
+	height     : 60px;
+}
+.bg-dark
+{
+	opacity : 0.9;
+}
+.navbar_brand
+{
+	width       : 100px;
+	text-align  : center;
+	font-weight : bold;
+}
+.form-control
+{
+	border-radius      : 50px;
+	overflow-scrolling : auto;
+	padding            : 0 0 0 9px;
+}
+.navbar .btn
+{
+	border-radius : 50px;
+	margin-right  : 25px;
+}
+.navbar .btn:focus
+{
+	background-color : rgb(48, 142, 48);
+	color            : white;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+"Livefeed" eg Carousel
+ */
+.livefeed
+{
+	height           : 100px;
+	overflow         : hidden;
+	outline          : solid #AA6C00 2px;
+	background-color : #413431;
+}
+.livefeed .row
+{
+	padding : 12px 100px;
+	height  : 100px;
+}
+.livefeed-article
+{
+	color              : black;
+	width              : 19%;
+	margin             : 3px;
+	height             : 100%;
+	background-color   : white;
+	border-radius      : 8px;
+	border             : solid black 1px;
+
+	transition         : transform .1s;
+	-webkit-box-shadow : 4px 7px 7px 0 rgba(0, 0, 0, 0.7);
+	-moz-box-shadow    : 4px 7px 7px 0 rgba(0, 0, 0, 0.7);
+	box-shadow         : 4px 7px 7px 0 rgba(0, 0, 0, 0.7);
+}
+.livefeed-article:focus,
+.livefeed-article:hover
+{
+	outline              : none;
+	background-color     : #E8E8E8;
+	color                : black;
+	text-decoration-line : none;
+
+	-ms-transform        : scale(1.06); /* IE 9 */
+	-webkit-transform    : scale(1.06); /* Safari 3-8 */
+	transform            : scale(1.06);
+}
+.livefeed-article-title
+{
+	padding-top : 2px;
+	font-weight : bold;
+}
+.livefeed-article-time
+{
+	font-size      : 16px;
+	font-style     : italic;
+	color          : gray;
+	padding-bottom : 2px;
+}
+/* This just removes the indicators from the carousel because i didnt like them*/
+.livefeed.carousel.slide
+{
+	margin : 0;
+}
+.carousel-control-prev,
+.carousel-control-next
+{
+	width : 80px;
+}
+.carousel-indicators,
+.carousel-indicators li
+{
+	cursor         : default;
+	pointer-events : none;
+}
+.carousel
+{
+	margin-bottom : 7%;
+}
+.carousel-indicators
+{
+	bottom : auto;
+	top    : 105%;
+}
+.carousel-indicators li
+{
+	border-color : #666;
+}
+.carousel-indicators .active
+{
+	background-color : #666;
+}
+
+
+
+
+
+
+
+
+
+
+/* Articles displayed on the frontpage/cat etc. */
+.article_grid
+{
+	margin-top            : 15px;
+	margin-left           : 15%;
+	margin-right          : 15%;
+	width                 : 70%;
+	display               : grid;
+	grid-gap              : 15px;
+	grid-row-gap          : 30px;
+	grid-template-columns : repeat(auto-fill, minmax(300px, 1fr));
+	grid-auto-rows        : 5px;
+}
+.article_front
+{
+	border-radius      : 10px;
+	border             : solid black 1px;
+	background-color   : white;
+	color              : black;
+	overflow           : hidden;
+
+	transition         : transform .1s;
+	-webkit-box-shadow : 4px 7px 7px 0 rgba(0, 0, 0, 0.7);
+	-moz-box-shadow    : 4px 7px 7px 0 rgba(0, 0, 0, 0.7);
+	box-shadow         : 4px 7px 7px 0 rgba(0, 0, 0, 0.7);
+
+}
+.article_front img
+{
+	object-fit    : cover;
+	width         : 100.1%;
+	border-bottom : solid #333 1px;
+}
+.article_page-article .row,
+.article-comments .row,
+.article_front .row
+{
+	background-color : rgba(222, 222, 222, 0.53);
+	border           : solid rgba(166, 166, 166, 0.76) 1px;
+}
+.article_front-likes
+{
+	padding     : 6px 15px;
+	color       : #D5424A;
+	font-weight : bold;
+}
+.article_front-time
+{
+	right      : 5px;
+	padding    : 6px;
+	font-style : italic;
+	color      : #4E555B;
+}
+.article_front h1
+{
+	text-align : left;
+	font-size  : 28px;
+	padding    : 10px;
+}
+.article_front:hover,
+.article_front:focus
+{
+	outline              : none;
+	color                : black;
+	text-decoration-line : none;
+
+	-ms-transform        : scale(1.03); /* IE 9 */
+	-webkit-transform    : scale(1.03); /* Safari 3-8 */
+	transform            : scale(1.03);
+}
+
+
+
+
+
+
+
+
+
+
+/* Main article page */
+.article_page
+{
+	border-radius    : 10px;
+	background-color : white;
+	margin           : 50px 10% 50px;
+	border           : solid black 1px;
+	overflow         : hidden;
+}
+.article_page img
+{
+	width         : 100%;
+	border-bottom : solid #303030 1px;
+}
+.article_page .button-delete
+{
+	margin : 5px 10px;
+}
+.article_page .button-edit
+{
+	margin-top    : 5px;
+	margin-bottom : 5px;
+}
+.article_page .button-like
+{
+	margin : 5px 10px;
+}
+.article-time
+{
+	white-space : pre-wrap;
+	padding     : 10px 30px;
+	font-style  : italic;
+}
+.article_page .text
+{
+	text-align : left;
+	word-wrap  : break-spaces;
+	margin     : 50px;
+}
+.article_page h1
+{
+	font-weight   : bold;
+	margin-bottom : 20px;
+}
+.article_page .text .content
+{
+	white-space : pre-wrap;
+}
+
+/* Kommentarer */
+.article-comments .row
+{
+	border-top : solid black 2px;
+}
+.article-comments .button-edit
+{
+	margin : 5px;
+}
+.article-comments .input-text
+{
+	border-radius : 50px;
+	margin        : 5px;
+	height        : 50px;
+}
+.article-comments .input-text:focus
+{
+	outline : none;
+}
+.article-comment-input-text .input-text
+{
+	width : 550px;
+}
+.article-comment .row
+{
+	width            : 100%;
+	background-color : rgba(128, 128, 128, 0.21);
+	border           : solid #686868 1px;
+}
+.article-comment .row .button-like,
+.article-comment .row .button-delete
+{
+	padding : 5px 10px;
+}
+.article-comment-time
+{
+	padding    : 9px 10px;
+	font-size  : 18px;
+	font-style : italic;
+}
+.article-comment-nickname
+{
+	padding     : 9px 10px;
+	font-size   : 20px;
+	font-weight : bold;
+}
+.article-comment-text
+{
+	padding    : 9px 10px;
+	font-size  : 20px;
+	font-style : italic;
+}
+
+
+
+
+
+
+
+
+
+/*edit and submit article page*/
+.input_form
+{
+	padding-top      : 20px;
+	margin           : 50px 10% 0 10%;
+	background-color : #4E555B;
+	border           : solid black 1px;
+}
+.input_form .time,
+.input_form label
+{
+	color       : white;
+	padding     : 5px 15px;
+	font-weight : bold;
+}
+/* Input fields */
+.input input,
+.input textarea
+{
+	margin        : 10px 10px 10px 10px;
+	width         : 80%;
+	border-radius : 5px;
+	padding       : 7px 7px 7px 10px;
+}
+.input-image-preview
+{
+	width          : 100%;
+	height         : 300px;
+	padding        : 10px;
+	text-align     : center;
+	vertical-align : center;
+}
+.input-image-preview img
+{
+	object-fit : scale-down;
+	height     : 100%;
+	width      : 100%;
+}
+/*
+Buttons
+*/
+.button-like,
+.button-delete,
+.button-edit
+{
+	border           : 2px solid rgba(125, 125, 125, 0.66);
+	background-color : rgba(0, 0, 0, 0.05);
+	text-decoration  : none;
+	padding          : 10px 30px;
+	position         : relative;
+	vertical-align   : middle;
+	text-align       : center;
+	display          : inline-block;
+	border-radius    : 3rem;
+	transition       : all ease 0.4s;
+}
+.button-like
+{
+	color : gray;
+}
+.button-like:focus,
+.button-like:hover
+{
+	outline          : none;
+	color            : #E63E32;
+	border-color     : #C45D49;
+	background-color : transparent;
+}
+.button-delete
+{
+	color : #FF705A;
+}
+.button-delete:focus,
+.button-delete:hover
+{
+	outline          : none;
+	color            : white;
+	border-color     : #8C2317;
+	background-color : #CC3F2E;
+}
+.button-edit
+{
+	color : #FF892B;
+}
+.button-edit:focus,
+.button-edit:hover
+{
+	outline          : none;
+	color            : white;
+	border-color     : #713F13;
+	background-color : #D47B19;
+}
+
+
+
+
+
+
+
+
+
+
+/* Empty Result Page */
+.empty_result
+{
+	margin-top         : 50px;
+	width              : 400px;
+	display            : inline-block;
+	background-color   : #E2625D;
+	border-radius      : 10px;
+	border             : solid black 1px;
+	white-space        : pre;
+
+	-webkit-box-shadow : 4px 7px 7px 0 rgba(0, 0, 0, 0.7);
+	-moz-box-shadow    : 4px 7px 7px 0 rgba(0, 0, 0, 0.7);
+	box-shadow         : 4px 7px 7px 0 rgba(0, 0, 0, 0.7);
+}
+.empty_result h3
+{
+	margin    : 10px;
+	font-size : 23px;
+}
+.empty_result img
+{
+	width         : 100.1%;
+	border-radius : 0 0 10px 10px;
+	border        : solid #9B9B9B 1px;
+}
+.empty_result a
+{
+	color : #3F3F89;
+}

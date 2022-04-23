@@ -1,0 +1,56 @@
+body{
+    background-color: #2e2827;
+    margin: 0;
+}
+
+.overskrift{
+    text-align: center;
+    font-size: 86px;
+    font-family: "Brush Script MT";
+    color: #e37420;
+}
+.meny{
+    background-color: rgb(31, 15, 15);
+    text-align: center;
+}
+.meny a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px;
+    color: #acadcb;
+}
+.meny a:hover{
+    background: rgba(227, 116, 32, 0.45);
+    color: #ecedff;
+}
+.meny a.Home{
+    background: #e37420;
+    color: #2e2827;
+}
+#innhold{
+    margin: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: 400px;
+}
+#innhold img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#bilder{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+    grid-auto-rows: 195px;
+}
+
+.bunntekst{
+    color: #ecedff;
+    text-align: center;
+    font-size: 12px;
+}
