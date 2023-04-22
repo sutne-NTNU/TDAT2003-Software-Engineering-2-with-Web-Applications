@@ -1,0 +1,177 @@
+/*html -iconer
+{
+    font-size: 100%;
+       /*<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+
+}*/
+
+html {
+  scroll-behavior: smooth;
+  white-space: pre-wrap;
+}
+
+body {
+  background-image: url(/pictures/geometricPattern.png);
+  background-repeat: repeat;
+  top: 0;
+}
+
+#root {
+  min-height: 71vh;
+}
+
+.landingpage {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url(/pictures/backgroundPink.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.HarmoniLogo {
+  font-family: "Lemonada", cursive;
+}
+
+/*Styling for eventinfo*/
+.eventinfo {
+  color: black;
+  text-decoration: none;
+}
+
+.eventinfo a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.eventinfo a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.eventinfo a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.eventinfo a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+input + span {
+  padding-right: 10px;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn-primary {
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.btn-secondary {
+  color: #6c757d;
+  border: 2px solid #6c757d;
+}
+
+.btn-success {
+  color: #28a745;
+  border: 2px solid #28a745;
+}
+
+.btn-danger {
+  color: #dc3545;
+  border: 2px solid #dc3545;
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.btn {
+  background-color: white;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.p-5,
+.p-2 {
+  margin-top: 1rem;
+}
+
+.imgPreviewFrame {
+  height: 250px; /* Equals maximum image height */
+  width: 100%;
+  border: 1px dotted #1e1e1e;
+  white-space: nowrap; /* This is required unless you put the helper span closely near the img */
+  text-align: center;
+  margin: 1em 0;
+}
+
+.imgPreviewContainer {
+  display: inline-block;
+  height: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.imgPreview img {
+  vertical-align: middle;
+  max-height: 25px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.imageText {
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 2px;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .c-md {
+    width: 70em;
+  }
+
+  .c-sm {
+    width: 50em;
+  }
+
+  .c-lg {
+    width: 80em;
+  }
+
+  .logo-big {
+    font-size: 7rem;
+  }
+
+  .h1 .HarmoniLogo {
+    font-size: 0.9rem;
+  }
+}
