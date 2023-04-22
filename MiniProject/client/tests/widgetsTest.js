@@ -16,7 +16,7 @@ describe('Alert tests', () => {
     expect(wrapper.find('button.close')).toHaveLength(0);
   });
 
-  it('after danger', done => {
+  it('after danger', (done) => {
     Alert.danger('test');
 
     // Wait for the Alert component to finish drawing
@@ -41,7 +41,6 @@ describe('Alert tests', () => {
     expect(wrapper.find('button.close')).toHaveLength(0);
   });
 });
-
 
 // import * as React from 'react';
 // import { Menu } from '../src/widgets.js';
